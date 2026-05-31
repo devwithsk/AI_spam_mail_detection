@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#667eea" />
+    <meta
+      name="description"
+      content="🛡️ Professional AI-powered spam detection for emails and SMS. Analyze messages with instant confidence scores."
+    />
+    <title>🛡️ Spam Detection - AI-Powered Email & SMS Analysis</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>" />
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="keywords" content="spam detection, email filter, SMS filter, AI, machine learning" />
+    <meta name="author" content="Spam Detection Team" />
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="🛡️ Spam Detection Website" />
+    <meta property="og:description" content="Professional spam detection for emails and SMS with AI" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Preconnect to backend API -->
+    <link rel="preconnect" href="http://localhost:5000" />
+    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      html, body {
+        width: 100%;
+        height: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      
+      #root {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        font-size: 24px;
+      }
+      
+      .spinner {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top-color: white;
+        animation: spin 0.8s linear infinite;
+        margin-right: 15px;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div style="text-align: center; padding: 50px; font-family: sans-serif; color: white;">
+        <h1>⚠️ JavaScript is required</h1>
+        <p>Please enable JavaScript to use the Spam Detection service.</p>
+      </div>
+    </noscript>
+    
+    <div id="root">
+      <div class="loading">
+        <div class="spinner"></div>
+        Loading Spam Detector...
+      </div>
+    </div>
+  </body>
+</html>
